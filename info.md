@@ -13,7 +13,15 @@ option: a sequences file (often fasta) that contains the sequences in the BIOM f
 So the code here is all over the place. I think I have met each of you to explain what I am doing with the code so that should help make it straightforward.
 
 There are two folders with similar code: Diabetes and ages, corresponding to two different projects.
-The code is divided in basically 3 steps.
+The code is divided in basically 3 steps, each with a notebook.
+
+1. extracting data from the american gut project database. Here we grab the data we need, download it, subset it and clean it according to our needs.
+2. associating the data with phylogeny and obtaining distances between the sequences so that we can build the graph
+3. building graphs and using them to train models.
+
+The first step is not actually done through a notebook, it's done in command line and requires QIIME2. It's already done for you since it's what we use to get the metadata and the BIOM files we need.
+The second step is the data engineering, it's ultimately very arbitrary, I did it one way but many other ways are possible.All that matters is that we take as input a BIOM table and a dirty metadata file, and output a pandas dataframe, clear labels, and a distance matrix of some kind.
+The last step is the actual preparation of the graph and training on the model. The notebook shows the overall process, but I implemented the two key steps as python files to allow for multiprocessing and execution with nohup.
 
 # DATA 
 ### Project Diabetes - small dataset (a few hundred sequences)
