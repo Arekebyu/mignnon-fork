@@ -11,7 +11,9 @@ option: a sequences file (often fasta) that contains the sequences in the BIOM f
 
 # CODE
 So the code here is all over the place. I think I have met each of you to explain what I am doing with the code so that should help make it straightforward.
-- see the miggnon git, all the code is there.
+
+There are two folders with similar code: Diabetes and ages, corresponding to two different projects.
+The code is divided in basically 3 steps.
 
 # DATA 
 ### Project Diabetes - small dataset (a few hundred sequences)
