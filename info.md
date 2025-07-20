@@ -10,6 +10,7 @@ option: a taxonomy file, estimated from the phylogeny, that gives us a list of s
 option: a sequences file (often fasta) that contains the sequences in the BIOM file.
 
 # CODE
+The code is in python 3.11
 So the code here is all over the place. I think I have met each of you to explain what I am doing with the code so that should help make it straightforward.
 
 There are two folders with similar code: Diabetes and ages, corresponding to two different projects.
@@ -59,6 +60,8 @@ Reference taxonomy: /media/data/BIAS/microbiome_GCN/2024.09.taxonomy.asv.tsv
 BIOM file: /media/data/BIAS/microbiome_GCN/AGES/AGP.data.biom.filtered.ages.tsv
 metadata file : /media/data/BIAS/microbiome_GCN/AGES/AGP_ages.metadata.txt
 sequences file: /media/data/BIAS/microbiome_GCN/AGES/AGP_ages_seqs.fa
+
+Precomputed phylogeny distances file: /media/data/BIAS/microbiome_GCN/AGES/MATRICES_ages.pickle
 
 (these are same as previous)
 Reference phylogeny: /media/data/BIAS/microbiome_GCN/2024.09.phylogeny.asv.nwk 
